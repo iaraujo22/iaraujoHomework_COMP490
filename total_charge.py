@@ -36,6 +36,6 @@ def calculate_total(state: str, currentItemRecord: list[ItemRecord]):
     return total_to_charge
 
 
-shop = [ItemRecord('shoes', 200.00, 'clothes')]
+shop2 = [ItemRecord('shoes', 165.00, 'clothes')]
 
-print("Your Total charge is: $ {} ".format(calculate_total('Maine', shop)))
+print("Your Total charge is: $ {} ".format(calculate_total('Maine', shop2)))
