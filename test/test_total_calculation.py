@@ -42,3 +42,5 @@ def test_total_clothes2():
 def test_empty_cart():
     result = total_charge.calculate_total('Massachusetts', shop3)
     assert result == 0
+
+

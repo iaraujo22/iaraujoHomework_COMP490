@@ -14,7 +14,7 @@ def calculate_total(state: str, currentItemRecord: list[ItemRecord]):
     if state == 'Massachusetts':
         for item in currentItemRecord:
             if item.price <= 0:
-                raise ValueError
+                raise ValueError("Price should be greater than zero ")
             tax = item.price * 0.0625
             if item.item_type == 'wic':
                 total_to_charge = item.price
@@ -27,12 +27,12 @@ def calculate_total(state: str, currentItemRecord: list[ItemRecord]):
     elif state == 'New Hampshire':
         for item in currentItemRecord:
             if item.price <= 0:
-                raise ValueError
+                raise ValueError("Price should be greater than zero ")
             total_to_charge = item.price
     elif state == 'Maine':
         for item in currentItemRecord:
             if item.price <= 0:
-                raise ValueError
+                raise ValueError("Price should be greater than zero ")
             if item.item_type == 'wic':
                 total_to_charge = item.price
             else:
